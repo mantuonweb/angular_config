@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##links
+@Inject(DOCUMENT) vs normal inject
+providers
+custom binding form
+npm link
+
+https://www.technouz.com/4746/how-to-use-run-time-environment-variables-in-angular/
+
+observable error handlng
+
+https://chariotsolutions.com/blog/post/12-factor-ish-configuration-of-angular-applications/
