@@ -9,8 +9,10 @@ import { ConfigurationService } from './core/configuration.service';
 export class AppComponent {
   title = 'democonfig';
   // https://davembush.github.io/where-to-store-angular-configurations/
-  settings:any={};
-  constructor(public config:ConfigurationService){
+  settings: any = {};
+  environment: any = {};
+  constructor(public config: ConfigurationService) {
     this.settings = config.settings;
+    this.environment = config.environment
   }
 }
