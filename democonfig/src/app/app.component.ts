@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfigurationService } from './core/configuration.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'democonfig';
+  // https://davembush.github.io/where-to-store-angular-configurations/
+  settings:any={};
+  constructor(public config:ConfigurationService){
+    this.settings = config.settings;
+  }
 }
