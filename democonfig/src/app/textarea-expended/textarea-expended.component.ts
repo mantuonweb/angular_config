@@ -13,7 +13,8 @@ export const EPANDED_TEXTAREA_VALUE_ACCESSOR : any = {
 })
 export class TextareaExpandedComponent implements ControlValueAccessor {
   // https://alligator.io/angular/custom-form-control/
-  //https://blog.angularindepth.com/never-again-be-confused-when-implementing-controlvalueaccessor-in-angular-forms-93b9eee9ee83
+  // https://codecraft.tv/courses/angular/advanced-topics/configurable-custom-validators/
+  // https://blog.angularindepth.com/never-again-be-confused-when-implementing-controlvalueaccessor-in-angular-forms-93b9eee9ee83
   @ViewChild('textarea') textarea;
 
   onChange;
