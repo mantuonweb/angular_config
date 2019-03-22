@@ -1,5 +1,9 @@
 <p>
-  custom-form works!
   {{text}}
+  {{result|json}}
 </p>
-<app-textarea-expended [(ngModel)]="text" [formControl]="control"></app-textarea-expended>
+<form #form="ngForm">
+  <app-textarea-expended [(ngModel)]="text" [formControl]="control"></app-textarea-expended>
+  <json-input [(ngModel)]="result" [formControl]="jsonresult" name="result"></json-input>
+</form>
+<!-- <json-input [(ngModel)]="result" name="result"></json-input> -->

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl ,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-custom-form',
@@ -7,11 +7,13 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./custom-form.component.sass']
 })
 export class CustomFormComponent implements OnInit {
-  control:FormControl
+  control:FormControl;
+  jsonresult:{};
   constructor() { }
 
   ngOnInit() {
-    this.control = new FormControl()
+    this.control = new FormControl('test',Validators.required);
+    this.jsonresult = new FormControl({"test":"test"},Validators.required);
   }
 
 }

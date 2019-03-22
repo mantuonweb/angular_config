@@ -12,6 +12,7 @@ export const EPANDED_TEXTAREA_VALUE_ACCESSOR : any = {
   styleUrls: ['./textarea-expended.component.sass']
 })
 export class TextareaExpandedComponent implements ControlValueAccessor {
+  // https://alligator.io/angular/custom-form-control/
   //https://blog.angularindepth.com/never-again-be-confused-when-implementing-controlvalueaccessor-in-angular-forms-93b9eee9ee83
   @ViewChild('textarea') textarea;
 
